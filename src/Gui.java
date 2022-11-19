@@ -6,7 +6,9 @@ public class Gui {
 
         Var.jf1 = new JFrame();
         Var.jf1.setSize(Var.screenwidth, Var.screenheight);
+        Var.jf1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Var.jf1.setLocationRelativeTo(null);
+        Var.jf1.setLayout(null);
         Var.jf1.setResizable(false);
         Var.jf1.requestFocus();
         Var.jf1.setTitle("Space Adventure");

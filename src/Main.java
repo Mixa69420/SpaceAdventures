@@ -6,5 +6,6 @@ public class Main {
         new Label();
         new Background();
         new PlayerMovement();
+        new Feueranimation();
     }
 }

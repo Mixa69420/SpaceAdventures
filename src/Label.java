@@ -18,6 +18,12 @@ public class Label extends JLabel {
         g.drawImage(Var.ib2, 0, Var.backgroundY2, 800, 600,  null);
         g.drawImage(Var.irakete, Var.x, Var.y, 50, 70,  null);
 
+        if(Var.feueranimation == 0){
+            g.drawImage(Var.ifeuer1, Var.x, Var.y+60, 50, 50,  null);
+        } else if(Var.feueranimation == 1){
+            g.drawImage(Var.ifeuer2, Var.x, Var.y+60, 50, 50,  null);
+        }
+
         repaint();
     }
 }

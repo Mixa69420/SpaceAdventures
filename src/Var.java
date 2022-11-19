@@ -12,11 +12,12 @@ public class Var {
     static int backgroundY1 = 0, backgroundY2 = -600, backgroundspeed =5;
     static int x = 400, y = 400;
     static int speedup = 3, speeddown =2, speedleft = 2, speedright = 2;
+    static int feuer = 1, feueranimation;
     static boolean moveup = false, movedown = false, moveleft = false, moveright = false;
     static Label lbl1 = new Label();
 
     static BufferedImage ib1,ib2;
-    static BufferedImage irakete;
+    static BufferedImage irakete, ifeuer1, ifeuer2;
 
     public Var(){
 
@@ -26,6 +27,11 @@ public class Var {
                 ib2 = ImageIO.read(new File("Rsc/Space.jpg"));
                 //Rakete
                 irakete = ImageIO.read(new File("Rsc/rakete.png"));
+                //Feuer
+                ifeuer1 = ImageIO.read(new File("Rsc/Feuer1.png"));
+                ifeuer2 = ImageIO.read(new File("Rsc/Feuer2.png"));
+
+
             } catch (IOException e) {
                 e.printStackTrace();
                 System.out.println("Bilder konnten nicht laden");
