@@ -5,5 +5,6 @@ public class Main {
         new KeyHandler();
         new Label();
         new Background();
+        new PlayerMovement();
     }
 }

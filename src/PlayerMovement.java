@@ -8,20 +8,20 @@ public class PlayerMovement {
         movement.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
-                if(Var.moveup = true){
+                if(Var.moveup){
                     if(Var.y>0){
                         Var.y -= Var.speedup;
                     }
-                }else  if(Var.movedown = true){
+                }else  if(Var.movedown){
                     if(Var.y<=490){
                         Var.y += Var.speeddown;
                     }
                 }
-                if(Var.moveleft = true){
+                if(Var.moveleft){
                     if(Var.x>0){
                         Var.x -= Var.speedleft;
                     }
-                }else  if(Var.moveright = true){
+                }else  if(Var.moveright){
                     if(Var.x<=730){
                         Var.x += Var.speedright;
                     }
@@ -29,6 +29,5 @@ public class PlayerMovement {
 
             }
         }, 0, 10);
-
     }
 }
