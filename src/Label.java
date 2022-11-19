@@ -16,13 +16,17 @@ public class Label extends JLabel {
 
         g.drawImage(Var.ib1, 0, Var.backgroundY1, 800, 600,  null);
         g.drawImage(Var.ib2, 0, Var.backgroundY2, 800, 600,  null);
-        g.drawImage(Var.irakete, Var.x, Var.y, 50, 70,  null);
+
 
         if(Var.feueranimation == 0){
-            g.drawImage(Var.ifeuer1, Var.x, Var.y+60, 50, 50,  null);
+            g.drawImage(Var.ifeuer1, Var.x, Var.y+64, 50, 50,  null);
         } else if(Var.feueranimation == 1){
-            g.drawImage(Var.ifeuer2, Var.x, Var.y+60, 50, 50,  null);
+            g.drawImage(Var.ifeuer2, Var.x, Var.y+64, 50, 50,  null);
         }
+        for(int i = 0; i<4; i++) {
+            g.drawImage(Var.igegner1, Var.gegnerx[i], Var.gegnery[i], 80, 60, null);
+        }
+        g.drawImage(Var.irakete, Var.x, Var.y, 50, 70,  null);
 
         repaint();
     }
