@@ -29,6 +29,7 @@ public class Var {
     static BufferedImage ib1,ib2;
     static BufferedImage irakete, ifeuer1, ifeuer2;
     static BufferedImage igegner1;
+    static BufferedImage iFlagge1, iFlagge2, iFlagge3;
 
     public Var(){
 
@@ -43,6 +44,10 @@ public class Var {
                 ifeuer2 = ImageIO.read(new File("Rsc/Feuer2.png"));
                 //Gegner
                 igegner1 = ImageIO.read(new File("Rsc/gegner1.png"));
+                //Flaggencollactables
+                iFlagge1 = ImageIO.read(new File("Rsc/flagge1.png"));
+                iFlagge2 = ImageIO.read(new File("Rsc/flagge2.png"));
+                iFlagge3 = ImageIO.read(new File("Rsc/flagge3.png"));
 
 
             } catch (IOException e) {
