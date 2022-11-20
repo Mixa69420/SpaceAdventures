@@ -7,5 +7,7 @@ public class Main {
         new Background();
         new PlayerMovement();
         new Feueranimation();
+        new Gegnermovement();
+        new udssrmovement();
     }
 }
